@@ -12,14 +12,19 @@ The SBN code should be a text file with the following specifications:
 - Jump address are denoted as <i>.label</i>
 - There should not be two labels with the same name
 - There are few reserved jump addresses:
-    - <i>.start</i> - The first instruction
-    - <i>.next</i> - The next instruction
-    - <i>.exit</i> - Exit the program
+    - <i>.start</i> - Address of first instruction
+    - <i>.next</i> - Address of next instruction
+    - <i>.exit</i> - Jumps to Terminate Instruction
+        - Terminate Instruction is an implicit instruction that is automatically added to the end of the program
 - SBN instruction should always start in a new line
-- Any line that does not start with SBN will be treated as comment
+- Any line that does not start with SBN will be ignored
+- Use // to comment
 - SBN instruction parameters can be separated using comma or space
 - This compiler is case insensitive. So SBN, sbn, SbN, etc. are all valid. Variables and labels are case also case insensitive
 - The whole program should be in a single file
+
+
+## Input File Format
 
 
 
