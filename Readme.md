@@ -1,10 +1,12 @@
 # SBN Compiler
 > Compiles Single Instruction-Set Computer (SIC) assembly code into machine code. The only instruction allowed is `SBN` (Subtract and Branch if Negative). This compiler was written in Python 3.9.0
 
+
 ## Usage
 ```sh
 python compile.py <input file> <output file>
 ```
+
 
 ## Compiler design specifications
 The `SBN` code should be a text file with the following specifications:
@@ -25,9 +27,12 @@ The `SBN` code should be a text file with the following specifications:
 - The whole program should be in a single file
 
 
+
+
 ## Input File Format
 > All the variables used in the program must be declared and initialised before the start of the `SBN` instructions. All the variable are treated as `int`. Variables and arrays can be declared in multiple lines. Memory addresses are allocated sequentially after the <i>Terminate Instruction</i> (last instruction added automatically to terminate the program).
-### Variable Declaration Syntax
+
+### Variable Declaration Syntax:
 ```html
 <variable> = <value> [, <variable> = <value>, ...]
 ```
@@ -35,7 +40,7 @@ The `SBN` code should be a text file with the following specifications:
 Example:<br>
 `A = 10, B = 20, C = 30`
 
-### Array Declaration Syntax
+### Array Declaration Syntax:
 ```html
 <variable>[<size>] = {<value>, <value>, ...}
 ```
