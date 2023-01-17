@@ -17,4 +17,28 @@ The SBN code should be a text file with the following specifications:
     - <i>.exit</i> - Exit the program
 - SBN instruction should always start in a new line
 - Any line that does not start with SBN will be treated as comment
+- SBN instruction parameters can be separated using comma or space
+- This compiler is case insensitive. So SBN, sbn, SbN, etc. are all valid. Variables and labels are case also case insensitive
+- The whole program should be in a single file
+
+
+
+## SBN Instruction
+```
+SBN <variable> <variable> <jump address>
+```
+The SBN instruction is defined as follows:
+Consider the following SBN instruction:
+```
+SBN A B .loop
+```
+This will execute the following:
+```
+A = A - B
+if A < 0:
+    goto .loop
+else
+    goto .next
+```
+
 
