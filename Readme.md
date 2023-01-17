@@ -6,6 +6,15 @@ Compiles Single Instruction-Set Computer (SIC) assembly code into machine code. 
 python compile.py <input file> <output file>
 ```
 
-## Format of input file
-The input file should be a text file with the following format:
-```
+## Compiler design specifications
+The SBN code should be a text file with the following specifications:
+- The only instruction allowed is SBN
+- Jump address are denoted as <i>.label</i>
+- There should not be two labels with the same name
+- There are few reserved jump addresses:
+    - <i>.start</i> - The first instruction
+    - <i>.next</i> - The next instruction
+    - <i>.exit</i> - Exit the program
+- SBN instruction should always start in a new line
+- Any line that does not start with SBN will be treated as comment
+
