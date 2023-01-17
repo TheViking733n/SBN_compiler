@@ -16,6 +16,7 @@ The `SBN` code should be a text file with the following specifications:
 - There are few reserved jump addresses:
     - <i>.start</i> - Address of first instruction, which is always <b>0</b>
     - <i>.next</i> - Address of next instruction, i.e. address of current instruction + 3
+    - `...` - Equivalent to <i>.next</i>
     - <i>.exit</i> - Jumps to <i>Terminate Instruction</i>
         - <i>Terminate Instruction</i> is an implicit instruction that is automatically added to the end of the program which always jump to address <b>1000</b>
 - `SBN` instruction should always start in a new line
