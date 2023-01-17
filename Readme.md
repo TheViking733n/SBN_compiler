@@ -28,24 +28,28 @@ The `SBN` code should be a text file with the following specifications:
 ## Input File Format
 > All the variables used in the program must be declared and initialised before the start of the `SBN` instructions. All the variable are treated as `int`. Variables and arrays can be declared in multiple lines. Memory addresses are allocated sequentially after the <i>Terminate Instruction</i> (last instruction added automatically to terminate the program).
 ### Variable Declaration Syntax
-```<variable> = <value> [, <variable> = <value>, ...]```
+```html
+<variable> = <value> [, <variable> = <value>, ...]
+```
 
 Example:<br>
-```A = 10, B = 20, C = 30```
+`A = 10, B = 20, C = 30`
 
 ### Array Declaration Syntax
-```<variable>[<size>] = {<value>, <value>, ...}```
+```html
+<variable>[<size>] = {<value>, <value>, ...}
+```
 
 Example:<br>
-```arr[5] = {1, 2, 3, 4, 5}```
+`arr[5] = {1, 2, 3, 4, 5}`
 
 
 
 
 ## SBN Instruction
 > Syntax:
-```
-SBN <variable> <variable> <jump address>
+```html
+SBN <variable> <variable> <jump-address>
 ```
 > The `SBN` instruction is defined as follows:
 
