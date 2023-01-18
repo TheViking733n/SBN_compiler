@@ -35,11 +35,11 @@ The `SBN` code should be a text file with the following specifications:
 
 ### Variable Declaration Syntax:
 ```html
-<variable> = <value> [, <variable> = <value>, ...]
+<variable> = <value> [; <variable> = <value>; ...]
 ```
 
 Example:<br>
-`A = 10, B = 20, C = 30`
+`A = 10; B = 20; C = 30`
 
 ### Array Declaration Syntax:
 ```html
