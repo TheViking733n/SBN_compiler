@@ -43,11 +43,11 @@ Example:<br>
 
 ### Array Declaration Syntax:
 ```html
-<variable>[<size>] = {<value>, <value>, ...}
+<variable> = {<value>, <value>, ...}
 ```
 
 Example:<br>
-`arr[5] = {1, 2, 3, 4, 5}`
+`arr = {1, 2, 3, 4, 5}`
 
 
 
